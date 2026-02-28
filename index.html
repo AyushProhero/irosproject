@@ -1,33 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="css/features.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="font-sans">
-    <nav class="p-6 border-b border-white/5 flex justify-between">
-        <div class="text-2xl font-black">IROS<span class="text-blue-500">.CORE</span></div>
-        <div class="space-x-6 text-xs uppercase font-bold text-slate-400">
-            <a href="index.html" class="text-white">Home</a>
-            <a href="dashboard.html">Dashboard</a>
-            <a href="pricing.html">Pricing</a>
-        </div>
-    </nav>
+:root {
+    --primary: #3b82f6;
+    --bg-dark: #020617;
+    --glass: rgba(255, 255, 255, 0.03);
+    --border: rgba(255, 255, 255, 0.1);
+}
 
-    <header class="py-32 text-center">
-        <h1 class="text-7xl font-black mb-6">Autonomous <span class="text-blue-500">Orchestration</span></h1>
-        <p class="text-slate-400 max-w-2xl mx-auto">Integrated VSE, Resource Booking, and Dignitary Protocols.</p>
-    </header>
+body {
+    background-color: var(--bg-dark);
+    color: #f8fafc;
+    font-family: 'Inter', sans-serif;
+    background-image: radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.15) 1px, transparent 0);
+    background-size: 40px 40px;
+}
 
-    <section class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 p-6">
-        <div class="glass-card p-8 rounded-3xl col-span-2">
-            <h3 class="text-2xl font-bold mb-4">Venue Suggestion Engine</h3>
-            <div id="vse-score" class="text-blue-400 font-mono">TOF: 0.92</div>
-        </div>
-        <div class="glass-card p-8 rounded-3xl border-rose-500/20">
-            <h3 class="text-lg font-bold">Approval Workflow</h3>
-            <p class="text-xs text-slate-500">2 Pending Verification</p>
-        </div>
-    </section>
-</body>
-</html>
+.glass-card {
+    background: var(--glass);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    padding: 2rem;
+    transition: 0.3s ease;
+}
+
+.glass-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
+}
+
+.nav-link { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94a3b8; }
+.nav-link:hover { color: var(--primary); }
