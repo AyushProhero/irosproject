@@ -1,31 +1,28 @@
-:root {
-    --primary: #3b82f6;
-    --bg-dark: #020617;
-    --glass: rgba(255, 255, 255, 0.03);
-    --border: rgba(255, 255, 255, 0.1);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="p-6 flex justify-between items-center border-b border-white/5">
+        <div class="text-2xl font-black italic">IROS<span class="text-blue-500">_CORE</span></div>
+        <div class="space-x-8">
+            <a href="index.html" class="text-blue-500 font-bold">Portal</a>
+            <a href="venue-engine.html" class="nav-link">Venue</a>
+            <a href="dashboard.html" class="nav-link">Resources</a>
+            <a href="analytics.html" class="nav-link">Sponsor/Approvals</a>
+        </div>
+    </nav>
 
-body {
-    background-color: var(--bg-dark);
-    color: #f8fafc;
-    font-family: 'Inter', sans-serif;
-    background-image: radial-gradient(circle at 2px 2px, rgba(59, 130, 246, 0.15) 1px, transparent 0);
-    background-size: 40px 40px;
-}
-
-.glass-card {
-    background: var(--glass);
-    backdrop-filter: blur(12px);
-    border: 1px solid var(--border);
-    border-radius: 24px;
-    padding: 2rem;
-    transition: 0.3s ease;
-}
-
-.glass-card:hover {
-    border-color: var(--primary);
-    box-shadow: 0 0 20px rgba(59, 130, 246, 0.1);
-}
-
-.nav-link { font-size: 0.75rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #94a3b8; }
-.nav-link:hover { color: var(--primary); }
+    <header class="container mx-auto px-6 pt-32 text-center">
+        <h1 class="text-7xl font-black mb-6 leading-tight">Autonomous <br> Logistics Engine.</h1>
+        <p class="text-slate-400 max-w-2xl mx-auto mb-10">Optimizing human potential through 5 integrated neural modules.</p>
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+            <div class="glass-card">VSE Engine (98% TOF)</div>
+            <div class="glass-card">142 Active Bookings</div>
+            <div class="glass-card">VIP Protocol: Active</div>
+        </div>
+    </header>
+</body>
+</html>
